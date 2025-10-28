@@ -29,7 +29,15 @@ class MyMainScreen extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () => Navigator.pushNamed(context, '/sample_design'),
-                  child: const Text('샘플 디자인1'),
+                  child: const Text('샘플 디자인1-중첩리스트'),
+                ),
+                ElevatedButton(
+                  onPressed: () => Navigator.pushNamed(context, '/sample_design2'),
+                  child: const Text('샘플 디자인2-탭모드'),
+                ),
+                ElevatedButton(
+                  onPressed: () => Navigator.pushNamed(context, '/sample_design3'),
+                  child: const Text('샘플 디자인3-드로워-네비게이션'),
                 ),
               ],
             )),
