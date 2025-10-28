@@ -132,7 +132,11 @@ Consumer(화면) Provider(컨트롤러) 패턴,
 준비물 2개: 1) 화면, 2) 컨트롤러
 
 공공데이터 오픈 api 서버의  요청 주소, 파라미터 다 포함. 
-https://apis.data.go.kr/6260000/FoodService/getFoodKr?serviceKey=ALRX9GpugtvHxcIO%2FiPg1vXIQKi0E6Kk1ns4imt8BLTgdvSlH%2FAKv%2BA1GcGUQgzuzqM3Uv1ZGgpG5erOTDcYRQ%3D%3D&pageNo=1&numOfRows=100&resultType=json
+https://apis.data.go.kr/6260000/FoodService/getFoodKr
+?serviceKey=ALRX9GpugtvHxcIO%2FiPg1vXIQKi0E6Kk1ns4imt8BLTgdvSlH%2FAKv%2BA1GcGUQgzuzqM3Uv1ZGgpG5erOTDcYRQ%3D%3D
+&pageNo=1
+&numOfRows=100
+&resultType=json
 
 데이터 구조 
 {
