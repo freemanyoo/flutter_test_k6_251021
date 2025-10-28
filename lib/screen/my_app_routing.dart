@@ -1,3 +1,4 @@
+import 'package:busanit501_flutter_workspace_251021/sample_design/list_of_listview_sample.dart';
 import 'package:busanit501_flutter_workspace_251021/screen/my_splash2.dart';
 import 'package:busanit501_flutter_workspace_251021/screen/pd_data/food_screen.dart';
 import 'package:busanit501_flutter_workspace_251021/screen/signup_screen.dart';
@@ -23,6 +24,7 @@ class MyAppRouting extends StatelessWidget {
         '/login': (context) => const MyLoginScreen(),
         // 공공데이터 받아 오는 화면으로 라우팅 추가.
         '/pdtest': (context) => const MyPdTestScreen(),
+        '/sample_design': (context) => const Sample3ListOfListView(),
       },
     );
   }

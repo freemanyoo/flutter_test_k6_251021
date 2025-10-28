@@ -27,6 +27,10 @@ class MyMainScreen extends StatelessWidget {
                   onPressed: () => Navigator.pushNamed(context, '/pdtest'),
                   child: const Text('조리식품의 레시피'),
                 ),
+                ElevatedButton(
+                  onPressed: () => Navigator.pushNamed(context, '/sample_design'),
+                  child: const Text('샘플 디자인1'),
+                ),
               ],
             )),
       );
