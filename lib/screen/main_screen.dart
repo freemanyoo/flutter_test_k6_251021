@@ -25,7 +25,7 @@ class MyMainScreen extends StatelessWidget {
                 ElevatedButton(
                   //라우팅 2번 째 준비물,
                   onPressed: () => Navigator.pushNamed(context, '/pdtest'),
-                  child: const Text('부산 맛집 공공 데이터'),
+                  child: const Text('조리식품의 레시피'),
                 ),
               ],
             )),

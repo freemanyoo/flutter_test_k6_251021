@@ -7,9 +7,9 @@ class FoodItem {
 
   factory FoodItem.fromJson(Map<String, dynamic> json) {
     return FoodItem(
-      mainTitle: json['MAIN_TITLE'],
-      title: json['TITLE'],
-      image: json['MAIN_IMG_NORMAL'],
+      mainTitle: json['RCP_NM'],
+      title: json['RCP_PARTS_DTLS'],
+      image: json['ATT_FILE_NO_MK'],
     );
   }
 }

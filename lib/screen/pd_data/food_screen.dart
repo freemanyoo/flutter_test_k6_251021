@@ -13,7 +13,7 @@ class MyPdTestScreen extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => FoodController()..fetchFoodData(),
       child: Scaffold(
-        appBar: AppBar(title: const Text('부산 맛집 정보 서비스')),
+        appBar: AppBar(title: const Text('조리식품의 레시피')),
         body: Consumer<FoodController>( // 컨트롤러로 부터 전달 받은 데이터를 , 화면에 반영하기.
           builder: (context, controller, _) {
             if (controller.isLoading) {
