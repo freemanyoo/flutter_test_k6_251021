@@ -70,7 +70,7 @@ class LoginController extends ChangeNotifier {
         Future.delayed(const Duration(seconds: 1), () {
           Navigator.pushAndRemoveUntil(
             context,
-            MaterialPageRoute(builder: (context) => const MyMainScreen()),
+            MaterialPageRoute(builder: (context) => const MainScreen2()),
                 (Route<dynamic> route) => false, // 🔥 이전 모든 화면 제거
           );
         });
@@ -127,7 +127,7 @@ class LoginController extends ChangeNotifier {
     // ✅ 로그아웃 후 이전 모든 화면 제거 후 메인 화면 이동
     Navigator.pushAndRemoveUntil(
       context,
-      MaterialPageRoute(builder: (context) => const MyMainScreen()),
+      MaterialPageRoute(builder: (context) => const MainScreen2()),
           (Route<dynamic> route) => false, // 🔥 이전 모든 화면 제거
     );
 
