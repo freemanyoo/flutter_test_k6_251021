@@ -1,11 +1,17 @@
+import 'package:busanit501_flutter_workspace_251021/controller/auth/login_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class MyLoginScreen extends StatelessWidget {
   const MyLoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // 메인에서 전달 받은 컨트롤러를, 가져와서 이용만 하면 됨.
+    // 이 화면을 , 컨트롤러를 지켜보고 있고, 데이터 변경이 감지 되면, 화면을 업데이트 하겠다.
+    final loginController = context.watch<LoginController>();
+
     return Scaffold(
         appBar: AppBar(
           title: const Text('로그인 화면'),
@@ -30,12 +36,17 @@ class MyLoginScreen extends StatelessWidget {
 
                 const SizedBox(height: 16,),
 
-                SizedBox(
+                loginController.isLoading ? const CircularProgressIndicator()
+                    : SizedBox(
                   // 목적: 가로 전체 크기 차지
                   width: double.infinity,
-                  child: ElevatedButton(onPressed: () {},
+                  child: ElevatedButton(
+                      onPressed: () => loginController.login(context),
                       child: const Text('로그인')),
-                )
+                ),
+
+
+
               ],
             ),
           ),
