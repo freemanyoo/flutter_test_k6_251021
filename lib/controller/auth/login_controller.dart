@@ -15,6 +15,7 @@ class LoginController extends ChangeNotifier {
   // final String serverIp = "http://192.168.219.103:8080"; // 서버 주소
   // 주의사항, 각자 아이피를 사용해야합니다. 그대로 사용하면 안됩니다.
   // localhost 로 하면 안됩니다.
+  // 만약, 에뮬레이터로 진행을 하면, : 10.0.2.2 로 변경해서 진행해보기.
   final String serverIp = "http://10.100.201.87:8080"; // 서버 주소 변경 필요
   bool isLoading = false; // 로그인 로딩 상태
   bool isLoggedIn = false; // 로그인 여부

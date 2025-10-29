@@ -26,7 +26,8 @@ void main() {
           ChangeNotifierProvider(create: (context) => LoginController()),
 
         ],
-        child: const MyAppRouting(),)
+        child: const MyAppRouting(),
+      )
   );
 
 } // main()
