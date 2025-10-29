@@ -38,6 +38,7 @@ dependencies:
   provider: ^6.0.5 # 상태를 관리하기 위한 도구
   http: ^0.13.6 # 기본적인 http 통신 도구
   dio: ^5.8.0+1 # 고급 기능이 포함된 통신 도구
+  flutter_secure_storage: ^9.2.2 # 보안 저장소 역할 도구.
 
 dev_dependencies:
   flutter_test:
