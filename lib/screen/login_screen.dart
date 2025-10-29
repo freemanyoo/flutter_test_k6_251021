@@ -25,14 +25,17 @@ class MyLoginScreen extends StatelessWidget {
 
                 const SizedBox(height: 16,),
 
-                const TextField(decoration: InputDecoration(labelText: '아이디')),
+                TextField(
+                    controller: loginController.idController,
+                    decoration: const InputDecoration(labelText: '아이디')),
 
                 const SizedBox(height: 16,),
 
-                const TextField(
+                TextField(
+                    controller: loginController.passwordController,
                   //비밀번호 마스킹 처리
                   obscureText: true,
-                    decoration: InputDecoration(labelText: '패스워드')),
+                    decoration: const InputDecoration(labelText: '패스워드')),
 
                 const SizedBox(height: 16,),
 
