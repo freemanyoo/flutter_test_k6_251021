@@ -115,7 +115,7 @@ class _MainScreen2State extends State<MainScreen2> {
                 if(loginController.isLoggedIn)
                 ElevatedButton(
                   //라우팅 2번 째 준비물,
-                  onPressed: () => Navigator.pushNamed(context, '/pdtest'),
+                  onPressed: () =>  Navigator.pushNamed(context,'/pdtest'),
                   child: const Text('조리식품의 레시피'),
                 ),
 
