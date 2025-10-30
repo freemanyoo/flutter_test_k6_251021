@@ -23,7 +23,7 @@ class SignupController extends ChangeNotifier {
   final ImagePicker _picker = ImagePicker();
   // -------------------------
 
-  final String serverIp = "http://10.100.201.87:8080"; // 서버 주소 변경 필요
+  final String serverIp = "http://10.0.2.2:8080"; // 서버 주소 변경 필요
   // final String serverIp = "http://192.168.219.103:8080"; // 서버 주소 변경 필요
 
   // 패스워드 일치 여부 검사
