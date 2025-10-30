@@ -117,6 +117,7 @@ class LoginController extends ChangeNotifier {
   Future<void> logout(BuildContext context) async {
     await secureStorage.delete(key: "accessToken");
     await secureStorage.delete(key: "refreshToken");
+    await secureStorage.delete(key: "profileImg");
     await secureStorage.delete(key: "mid");
 
     // 로그인 상태 업데이트
@@ -177,5 +178,12 @@ class LoginController extends ChangeNotifier {
         );
       },
     );
+  }
+  // ✅ --- dispose 함수 추가 ---
+  @override
+  void dispose() {
+    idController.dispose();
+    passwordController.dispose();
+    super.dispose();
   }
 }

@@ -6,6 +6,9 @@ import 'package:busanit501_flutter_workspace_251021/screen/main_screen_%EB%A1%9C
 import 'package:busanit501_flutter_workspace_251021/screen/my_splash2.dart';
 import 'package:busanit501_flutter_workspace_251021/screen/pd_data/food_screen.dart';
 import 'package:busanit501_flutter_workspace_251021/screen/signup_screen.dart';
+import 'package:busanit501_flutter_workspace_251021/screen/todos/todo_create_screen.dart';
+import 'package:busanit501_flutter_workspace_251021/screen/todos/todo_detail_screen.dart';
+import 'package:busanit501_flutter_workspace_251021/screen/todos/todos_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -31,6 +34,10 @@ class MyAppRouting extends StatelessWidget {
         '/sample_design': (context) => const Sample3ListOfListView(),
         '/sample_design2': (context) => MaterialHomePage(),
         '/sample_design3': (context) => ResponsiveNavBarPage(),
+        '/todos': (context) => TodosScreen(),
+        "/todoCreate": (context) => const TodoCreateScreen(),
+        '/todoDetail': (context) => TodoDetailScreen(tno: ModalRoute.of(context)!.settings.arguments as int),
+
       },
     );
   }

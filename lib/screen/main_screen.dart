@@ -66,6 +66,8 @@ class _MainScreen2State extends State<MainScreen2> {
                   radius: 60,
                   backgroundColor: Colors.grey[200],
                   // profileImgId가 있으면 NetworkImage 로드, 없으면 기본 아이콘
+                  // 예시
+                  //http://10.100.201.87:8080/member/view/6902c22d2f5a26d3ccb68d47
                   backgroundImage: (profileImgId != null && profileImgId!.isNotEmpty)
                       ? NetworkImage("$serverIp/member/view/$profileImgId")
                       : null,
@@ -131,6 +133,16 @@ class _MainScreen2State extends State<MainScreen2> {
                 ElevatedButton(
                   onPressed: () => Navigator.pushNamed(context, '/sample_design3'),
                   child: const Text('샘플 디자인3-드로워-네비게이션'),
+                ),
+              if (loginController.isLoggedIn)
+                ElevatedButton(
+                  onPressed: () => Navigator.pushNamed(context, '/todos'),
+                  child: const Text('todos 일정'),
+                ),
+              if (loginController.isLoggedIn)
+                ElevatedButton(
+                  onPressed: () => Navigator.pushNamed(context, '/ai'),
+                  child: const Text('Ai 테스트'),
                 ),
             ],
           )),

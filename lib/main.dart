@@ -1,5 +1,6 @@
 import 'package:busanit501_flutter_workspace_251021/controller/auth/login_controller.dart';
 import 'package:busanit501_flutter_workspace_251021/controller/auth/signup_controller.dart';
+import 'package:busanit501_flutter_workspace_251021/controller/todos/todo_controller.dart';
 import 'package:busanit501_flutter_workspace_251021/screen/login_screen.dart';
 import 'package:busanit501_flutter_workspace_251021/screen/main_screen.dart';
 import 'package:busanit501_flutter_workspace_251021/screen/my_app_routing.dart';
@@ -26,6 +27,7 @@ void main() {
           // 로그인 컨트롤러 추가. 다른 구조도 같은 패턴 형식으로 진행.
           ChangeNotifierProvider(create: (context) => LoginController()),
           ChangeNotifierProvider(create: (context) => SignupController()),
+          ChangeNotifierProvider(create: (context) => TodoController()),
 
         ],
         child: const MyAppRouting(),
