@@ -24,7 +24,7 @@ class MyAppRouting extends StatelessWidget {
       //라우팅 준비물 1,
       routes: {
         '/main': (context) => MainScreen2(),
-        '/signup': (context) => const MySignUpScreen(),
+        '/signup': (context) => const SignupScreen(),
         '/login': (context) => const MyLoginScreen(),
         // 공공데이터 받아 오는 화면으로 라우팅 추가.
         '/pdtest': (context) => const MyPdTestScreen(),
