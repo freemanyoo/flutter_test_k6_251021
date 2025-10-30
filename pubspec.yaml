@@ -39,6 +39,10 @@ dependencies:
   http: ^0.13.6 # 기본적인 http 통신 도구
   dio: ^5.8.0+1 # 고급 기능이 포함된 통신 도구
   flutter_secure_storage: ^9.2.2 # 보안 저장소 역할 도구.
+  # 회원가입시, 프로필이미지 추가 기능 시 필요한 도구
+  http_parser: ^4.0.2 # (Multipart에 필요)
+  image_picker: ^1.0.7 # 갤러리/카메라 접근
+  path: ^1.8.3       # 파일명 추출
 
 dev_dependencies:
   flutter_test:
