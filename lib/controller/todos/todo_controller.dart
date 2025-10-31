@@ -77,7 +77,7 @@ class TodoController extends ChangeNotifier {
       // ✅ 최초 호출에서는 전체 개수를 가져오기 위해 size=0
       // "$serverIp/list2?size=10",
       // 검색 기능 추가,
-        "$serverIp/list?size=10${lastCursorId != null ? '&cursor=$lastCursorId' : ''}&type=$searchType&keyword=$keyword"
+        "$serverIp/list2?size=10${lastCursorId != null ? '&cursor=$lastCursorId' : ''}&type=$searchType&keyword=$keyword"
 
     );
 
