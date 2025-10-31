@@ -16,8 +16,9 @@ class _TodosScreenState extends State<TodosScreen> {
   bool showScrollToTopButton = false;
 
   @override
-  void initState() {
+  void initState() { // 화면을 그릴 때 최초로 1번 실행, 첫 변수들을 , 객체등을 초기화 할 때 많이 사용.
     super.initState();
+
     final todoController = context.read<TodoController>();
 
     WidgetsBinding.instance.addPostFrameCallback((_) {

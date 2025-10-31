@@ -12,6 +12,8 @@ import 'package:busanit501_flutter_workspace_251021/screen/todos/todos_screen.da
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'ai/image/ai_image_screen.dart';
+import 'ai/stock/ai_stock_screen.dart';
 import 'login_screen.dart';
 import 'main_screen.dart';
 
@@ -37,6 +39,9 @@ class MyAppRouting extends StatelessWidget {
         '/todos': (context) => TodosScreen(),
         "/todoCreate": (context) => const TodoCreateScreen(),
         '/todoDetail': (context) => TodoDetailScreen(tno: ModalRoute.of(context)!.settings.arguments as int),
+        // ai 라우티.
+        "/aiTest": (context) => AiImageScreen(),
+        "/aiTest2": (context) => AiStockScreen(),
 
       },
     );
