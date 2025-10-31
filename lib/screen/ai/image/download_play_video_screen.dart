@@ -220,7 +220,8 @@ class _DownloadAndPlayVideoState extends State<DownloadAndPlayVideo> {
       Directory directory = await getApplicationDocumentsDirectory();
       String filePath = "${directory.path}/downloaded_video.mp4";
 
-      String formattedUrl = Uri.encodeFull(widget.videoUrl.replaceFirst("127.0.0.1", "10.0.2.2")); // ✅ 에뮬레이터용 IP 변환
+      // String formattedUrl = Uri.encodeFull(widget.videoUrl.replaceFirst("127.0.0.1", "10.0.2.2")); // ✅ 에뮬레이터용 IP 변환
+      String formattedUrl = Uri.encodeFull(widget.videoUrl.replaceFirst("127.0.0.1", "10.100.201.87")); // ✅ 실물기기 용 IP 변환
 
       // ✅ 파일 다운로드 시작
       await Dio().download(

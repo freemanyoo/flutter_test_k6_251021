@@ -20,7 +20,8 @@ class _AiImageScreenState extends State<AiImageScreen> {
   bool isDownloadComplete = false;
 
   // 서버의 기본 주소
-  final String serverBaseUrl = "http://10.0.2.2:5000";
+  // final String serverBaseUrl = "http://10.0.2.2:5000";
+  final String serverBaseUrl = "http://10.100.201.87:5000";
 
   /// 파일을 앱별 저장소에 다운로드하는 함수 (권한 불필요)
   Future<void> _downloadFile(String fileUrl) async {

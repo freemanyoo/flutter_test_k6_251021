@@ -40,8 +40,8 @@ class MyAppRouting extends StatelessWidget {
         "/todoCreate": (context) => const TodoCreateScreen(),
         '/todoDetail': (context) => TodoDetailScreen(tno: ModalRoute.of(context)!.settings.arguments as int),
         // ai 라우티.
-        "/ai": (context) => AiImageScreen(),
-        "/aiTest2": (context) => AiStockScreen(),
+        "/ai-image": (context) => AiImageScreen(),
+        "/ai-stock": (context) => AiStockScreen(),
 
       },
     );

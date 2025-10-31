@@ -141,8 +141,13 @@ class _MainScreen2State extends State<MainScreen2> {
                 ),
               if (loginController.isLoggedIn)
                 ElevatedButton(
-                  onPressed: () => Navigator.pushNamed(context, '/ai'),
-                  child: const Text('Ai 테스트'),
+                  onPressed: () => Navigator.pushNamed(context, '/ai-image'),
+                  child: const Text('Ai 이미지 테스트'),
+                ),
+              if (loginController.isLoggedIn)
+                ElevatedButton(
+                  onPressed: () => Navigator.pushNamed(context, '/ai-stock'),
+                  child: const Text('Ai 주가 테스트'),
                 ),
             ],
           )),

@@ -15,7 +15,8 @@ class ImagePreviewScreen extends StatelessWidget {
 
   /// 127.0.0.1 → 10.0.2.2 변환 (에뮬레이터 호환성)
   String _updateImageUrl(String url) {
-    return url.replaceFirst("127.0.0.1", "10.0.2.2");
+    // return url.replaceFirst("127.0.0.1", "10.0.2.2"); //에뮬레이터 용
+    return url.replaceFirst("127.0.0.1", "10.100.201.87"); // 실물기기 일 경우 , 실제 아이피
   }
 
   @override
